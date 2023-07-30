@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            for (int j = i; j <= 5; j++)
+            {
+                Console.Write(" "); // Prints a space for each iteration of j
+            }
+            for (int k = 1; k <= i; k++)
+            {
+                Console.Write("*"); // Prints * for each iteration of k without a newline
+            }
+            Console.WriteLine(); // Adds a newline after printing the * characters for each row
+        }
+        Console.ReadLine(); // Waits for user input before the program exits
+    }
+}
